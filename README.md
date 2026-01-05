@@ -1,2 +1,2 @@
 # Sentinel-Network
-168-satellite Mars comm/nav constellation • Starship-deployable
+Open simulation and systems analysis for a fault-tolerant Mars orbital relay constellation.
