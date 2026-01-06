@@ -61,7 +61,9 @@ Sentinel-Network/
 ├── README.md            — Project overview and context  
 ├── LICENSE              — MIT License  
 ├── simulations/         — Coverage, revisit, and loss-tolerance modeling  
-├── docs/                — Architecture notes, modeling assumptions, scope boundaries, and non-goals  
+├── docs/                — Architecture summary and modeling scope
+│   ├── architecture_summary.md
+│   └── modeling_scope.md
 ├── figures/             — Generated plots and constellation visuals  
 └── data/                — Constants and reference parameters  
 
