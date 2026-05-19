@@ -1,4 +1,4 @@
-Sentinel Network – Build Script
+# Sentinel Network – Build Script
 
 # ===================================================================
 # SENTINEL NETWORK v4.6
@@ -9,7 +9,7 @@ Sentinel Network – Build Script
 # - DUAL-LAYER COGNITIVE PAYLOAD
 # - PROPULSION OPTIONAL WITH EXPLICIT LIFETIME TRADE
 #
-# REVISION: v4.6 
+# REVISION: v4.6
 # DATE: December 2025
 # ===================================================================
 
@@ -48,26 +48,26 @@ SENSORS = {
         "heritage": "MRO MARCI (Malin et al., JGR Planets 2009)",
         "mass_kg": 2.0,
         "avg_power_w": 6.0,
-        "notes": "180° FOV global synoptic monitoring"
+        "notes": "180° FOV global synoptic monitoring",
     },
     "EMIRS FTIR Sounder": {
         "heritage": "EMIRS (Edwards et al., Space Sci Rev 2021)",
         "mass_kg": 14.7,
         "avg_power_w": 22.0,
-        "notes": "Dust/ice opacity & vertical atmospheric profiles"
+        "notes": "Dust/ice opacity & vertical atmospheric profiles",
     },
     "Liulin-MO Dosimeter": {
         "heritage": "ExoMars TGO FREND / Liulin series",
         "mass_kg": 1.0,
         "avg_power_w": 3.0,
-        "notes": "Radiation flux, SEP alerts, crew risk context"
+        "notes": "Radiation flux, SEP alerts, crew risk context",
     },
     "CNFI — Cognitive Narrow-Field Imager": {
         "heritage": "MSSS ECAM-C50 (OSIRIS-REx / Perseverance lineage)",
         "mass_kg": 1.5,
         "avg_power_w": 8.0,
-        "notes": "~15–30 m/pixel AI-triggered inspection; body-pointed, no gimbal"
-    }
+        "notes": "~15–30 m/pixel AI-triggered inspection; body-pointed, no gimbal",
+    },
 }
 
 sensor_mass = sum(s["mass_kg"] for s in SENSORS.values())
@@ -101,7 +101,7 @@ MASS_BUDGET_BASE = {
     "Batteries (Li-ion, storm)":     60.0,
     "Thermal control":               20.0,
     "Radiation shielding":           25.0,
-    "Margins (programmatic)":        40.0
+    "Margins (programmatic)":        40.0,
 }
 
 DRY_MASS_BASELINE = sum(MASS_BUDGET_BASE.values())
@@ -118,10 +118,10 @@ print()
 # ============================================================================
 
 SOLAR_EOL_W = 457.0      # Average EOL available power (cell-only)
-BUS_BASE_W  = 180.0      # Avionics, comms, thermal, margins (excludes sensors)
-AI_BURST_W  = 700.0
+BUS_BASE_W = 180.0       # Avionics, comms, thermal, margins (excludes sensors)
+AI_BURST_W = 700.0
 
-print("4. POWER SYSTEM (LOCKED)")
+print("4. POWER SYSTEM")
 print(f"Solar generation (EOL avg):     {SOLAR_EOL_W:.0f} W")
 print(f"Base bus load (no sensors):     {BUS_BASE_W:.0f} W")
 print(f"Sensor average power:           {sensor_power:.1f} W")
