@@ -1,7 +1,7 @@
 Sentinel Network – Build Script
 
 # ===================================================================
-# SENTINEL NETWORK v4.6 
+# SENTINEL NETWORK v4.6
 # Mars Global Monitoring & Infrastructure Constellation
 #
 # STATUS:
@@ -38,7 +38,7 @@ print("Baseline propulsion:      NONE (short-duration mission acceptable)")
 print()
 
 # ============================================================================
-# 2. SENSOR SUITE — LOCKED DUAL-LAYER
+# 2. SENSOR SUITE
 # ============================================================================
 
 print("2. SENSOR SUITE — DUAL-LAYER COGNITIVE PAYLOAD")
@@ -121,7 +121,7 @@ SOLAR_EOL_W = 457.0      # Average EOL available power (cell-only)
 BUS_BASE_W  = 180.0      # Avionics, comms, thermal, margins (excludes sensors)
 AI_BURST_W  = 700.0
 
-print("4. POWER SYSTEM")
+print("4. POWER SYSTEM (LOCKED)")
 print(f"Solar generation (EOL avg):     {SOLAR_EOL_W:.0f} W")
 print(f"Base bus load (no sensors):     {BUS_BASE_W:.0f} W")
 print(f"Sensor average power:           {sensor_power:.1f} W")
@@ -200,5 +200,5 @@ print("- CNFI body-pointed; no gimbal or ACS escalation required")
 print("- Baseline no-propulsion (~2–4 year life)")
 print("- Optional EP transparently documented for 10+ year extension")
 print("- All values heritage-traceable or first-principles")
-print("- Review-safe | Infrastructure-ready")
+print("- Infrastructure-ready")
 print("=" * 110)
